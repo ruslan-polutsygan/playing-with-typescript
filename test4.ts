@@ -27,3 +27,10 @@ validators['Letters Only'] = new Validation.LettersOnlyValidator();
         console.log(s + ' ' + v + ' ' + (validators[v].isAcceptable(s)?'ok':'bad'));
     }
 });
+
+console.log('=====');
+console.log(Validation.LettersOnlyValidator);
+console.log(typeof Validation.LettersOnlyValidator);
+var x: typeof Validation.LettersOnlyValidator = Validation.MinLengthValidator;
+
+console.log((new x()).isAcceptable('dsaaaaa'));
